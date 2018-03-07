@@ -1,35 +1,98 @@
 <!DOCTYPE html>
 <html>
-         <head>
-           <title>True Stories</title>
-           <link rel="shortcut icon" href="favicon.ico">
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">		
-		<link rel="stylesheet" href="css/main.css">
-         </head>
- 	 <body>
+<head>
+<style>
+.text-effect {
+overflow: hidden;
+position: relative;
+filter: contrast(110%) brightness(190%);
+}
+.neon {
+position: relative;
+background: black;
+color: transparent;
+}
+.neon::before, .neon::after {
+content: attr(data-text);
+color: white;
+filter: blur(0.02em);
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+}
+.neon::after {
+mix-blend-mode: difference;
+}
+.gradient, .spotlight {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+pointer-events: none;
+z-index: 10;
+}
+.gradient {
+background: linear-gradient(45deg, red, blue);
+mix-blend-mode: multiply;
+}
+.spotlight {
+animation: light 5s infinite linear;
+background: radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+top: -100%;
+left: -100%;
+mix-blend-mode: color-dodge;
+}
+@keyframes light {
+100% {
+transform: translate3d(50%, 50%, 0);
+}
+}
+.neon {
+font: 700 220px 'Lato', sans-serif;
+text-transform: uppercase;
+text-align: center;
+margin: 0;
+}
+.neon:focus {
+outline: none;
+border: 1px dotted white;
+}
+body {
+background: black;
+display: inline;
+min-height: 100vh;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+</style>
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<div class="text-effect">
+<h1 class="neon" data-text="True Stories"contenteditable>neon</h1>
+<div class="gradient"></div>
+<div class="spotlight"></div>
   	 <ul>
-		 <li><a href="index.html">Home</a></li>  
-		  <li>True Stories</li>
-		  <li><a href="GhostStories.html">Ghost Stories</a></li>
-		  <li><a href="CreepyPasta.html">Creepy Pasta</a></li>
-	          <li><a href="Aboutus.html">About Us</a></li>
-                  <li><a href="contactus.html">Contact Us</a></li>
-
-		 
-		 </ul>
-	         </body>    
-			<h3><p><strong>The Evil Twin</strong></p></h3>
-	
+<li><a href="index.html">Home</a></li>  
+<li>True Stories</li>
+<li><a href="GhostStories.html">Ghost Stories</a></li>
+<li><a href="CreepyPasta.html">Creepy Pasta</a></li>
+<li><a href="Aboutus.html">About Us</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+ </ul>
+</body>    
+<h3><p><strong>The Evil Twin</strong></p></h3>
   <br>“New Year’s Day, 1995. I was in the middle of 3rd year university, and a bunch of friends had come down to visit me and my roommate for the festivities. 
   <br>We were all pretty hungover from drinking the night before, and went out for the usual “nice day out, a bit chilly,
   <br>I don’t feel so good” post-greasy-breakfast hungover stroll around the neighborhood.
-
 <p>Two of these friends were twin brothers. One of them, we hung out with all the time. The other we’d just met for the first time. 
 <br>He was pretty normal the night before, joining in the fun, but on this day, we were all hanging around a local basketball court shooting hoops with an old basketball we’d found in the grass,
 <br>and this twin brother kept following me around all over the place with the creepiest grin I’d ever seen in my life. Staring right into the nether regions of my soul, the whole time.
 
-	<br>I’d back away and join the group again, and he’d keep following me around.</br> <br>When we were walking back to the apartment,
+<br>I’d back away and join the group again, and he’d keep following me around.</br> <br>When we were walking back to the apartment,
 it was just me and him walking down the sidewalk behind the group, and he moved over in front of me, stared at me with that creepy look again,
 and fell down to his knees as if to worship me or something.</br> <br>I didn’t know what to do… “Hey buddy? You all right? We’re heading back now, right?” And so on.</br>
 <br>He wouldn’t say anything – he’d just be there on his knees, looking up at me with a clenched face and squinted eyes as if he were looking directly into the sun or something.</br>
@@ -48,15 +111,5 @@ because he knew he was going to do it but he couldn’t stop himself from doing 
 
 <p>This was 22 years ago. I know for a fact it was a mental illness,
 <br>but just knowing that I had somehow “commanded” him to go kill his aunt stays with me to this day.”</br>
-	<strong>By: catgotcha</strong>
-<style>
-     body {			    
-          background-color:black;
-	     Color: #05EDFF;
-	     nav ul li {
-	       display: inline-block;
-	       list-style-type: none;
-	       }
-	       
-  </style>		    
+	<strong>By: catgotcha</strong>	    
    </html>
