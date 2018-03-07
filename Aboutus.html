@@ -1,58 +1,116 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>About Us</title>
-		<link rel="shortcut icon" href="favicon.ico">
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">		
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-	<ul>
-		<li><a href="index.html">Home</a></li>		
-		<li><a href="TrueStories.html">True Stories</a></li>
-		<li><a href="GhostStories.html">Ghost Stories</a></li>
-		<li><a href="CreepyPasta.html">Creepy Pasta</a></li>
-		<li>About Us</li>
-		<li><a href="contactus.html">Contact Us</a></li>
- <body>
-	 
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/PS4-Console-wDS4.jpg/800px-PS4-Console-wDS4.jpg"
-			    a href="https://mail.google.com/mail/u/0/#inbox"
-			     <p></p>
-			<img src="http://i.dell.com/sites/imagecontent/products/PublishingImages/alienware-17/laptop-aw-17-pdp-love-design-2.jpg"
-			    a href="https://mail.google.com/mail/u/0/#inbox"
-				
-	 <p></p>
-    <h1>About Us</h1>	
-	 <p>Here you will be able to read about the background of the "Horror Studio" developers.</p> 
-	 <p>We both are seniors of Whitehall High School.</p> 
-	 <p>We decided to work on a project where people could read spooky stories of many genre types.</p>
-	  <h1>Caden</h1>
-	 <p> I have taken a couple technology classes at Whitehall High School and have been interested in programming for quite a while and is what I am currently aiming towards.</p>
-	 <p> I love playing many varieties of games. One of my personal favorites is FPS (First Person Shooters).</p>
-	 <p> First Person Shooters are games that are Player vs player and where you must complete objectives while simultaneously killing people to defend yourself and your team.</P>
-	 <p> There are so many FPS games, such as Call Of Duty, Battlefield, halo, and so many more.</p>
-         <p> Gaming and programming are two of my favorite things to do, and that is why I am aiming for a degree into the programming field.</p>
-         <p></p> 
-	   <h1>Trevor</h1>
-		<p> Ever Since I was a kid I always wanted to be a Marine Biologist.</p>
-		<p> After being diagnosed with Asthma I knew that being a Marine Biologist Would no longer be as easy.</p>
-		<p> I could still have been in the Marine Biologist field but I would not have been able to do what I wanted in that field.</p>
-		<p> I always wanted to go under the water and study the sea floor. Studying sharks and other creatures alike was always my dream. </p>
-	        <p> When we got the news I didn't even know what I wanted to do next.</p>
-	        <p> I tried Video Game Design and I did not perfer that field. Now I am studying Cyber Security.</p>
-		<p> Even though my mind was set on Marine Biology for a long time, I felt like Cyber Security was always something I was interested in.</p>
-		<p> I attented the Career Tech Center in Muskegon, Michigan in 2016-2018 and earned two Microsoft Certifications in Security and Networking.</p>
-		<p> After High School I plan on attending MCC for 2 year and working on CompTIA Certifications, then transferring to Ferris and finishing my degree in Cyber Security or programming.</p>
-	        <p>I also am working on another webiste for personal/business use. You will be able to read about many things like my future career, Certifications, and Education. <a href="https://hackney2018.github.io/Life-Story/"><span style="color:#00FFFF">My Personal Website (click) </a></span></p> 
-	 
-               
-   </body>
-   <style>
-    body {
-      background-color:black;
-      color: #F7006B;
-      text-align:left;
-        }
+<head>
+<title>About Us</title>
+<link rel="shortcut icon" href="favicon.ico">
+<style>
+.text-effect {
+overflow: hidden;
+position: relative;
+filter: contrast(110%) brightness(190%);
+}
+.neon {
+position: relative;
+background: black;
+color: transparent;
+}
+.neon::before, .neon::after {
+content: attr(data-text);
+color: white;
+filter: blur(0.02em);
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+}
+.neon::after {
+mix-blend-mode: difference;
+}
+.gradient, .spotlight {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+pointer-events: none;
+z-index: 10;
+}
+.gradient {
+background: linear-gradient(45deg, red, blue);
+mix-blend-mode: multiply;
+}
+.spotlight {
+animation: light 5s infinite linear;
+background: radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+top: -100%;
+left: -100%;
+mix-blend-mode: color-dodge;
+}
+@keyframes light {
+100% {
+transform: translate3d(50%, 50%, 0);
+}
+}
+.neon {
+font: 700 220px 'Lato', sans-serif;
+text-transform: uppercase;
+text-align: center;
+margin: 0;
+}
+.neon:focus {
+outline: none;
+border: 1px dotted white;
+}
+body {
+background: black;
+display: inline;
+min-height: 100vh;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+</style>
+</head>
+<body>
+<div class="text-effect">
+<h1 class="neon" data-text="About Us"contenteditable>neon</h1>
+<div class="gradient"></div>
+<div class="spotlight"></div>
+<ul>
+<li><a href="index.html">Home</a></li>		
+<li><a href="TrueStories.html">True Stories</a></li>
+<li><a href="GhostStories.html">Ghost Stories</a></li>
+<li><a href="CreepyPasta.html">Creepy Pasta</a></li>
+<li>About Us</li>
+<li><a href="contactus.html">Contact Us</a></li>
+<body> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/PS4-Console-wDS4.jpg/800px-PS4-Console-wDS4.jpg"
+a href="https://mail.google.com/mail/u/0/#inbox"
+<p></p>
+<img src="http://i.dell.com/sites/imagecontent/products/PublishingImages/alienware-17/laptop-aw-17-pdp-love-design-2.jpg"
+a href="https://mail.google.com/mail/u/0/#inbox"				
+<p></p>	
+<p>Here you will be able to read about the background of the "Horror Studio" developers.</p> 
+<p>We both are seniors of Whitehall High School.</p>
+<p>We decided to work on a project where people could read spooky stories of many genre types.</p>
+<h1>Caden</h1>
+<p> I have taken a couple technology classes at Whitehall High School and have been interested in programming for quite a while and is what I am currently aiming towards.</p>
+<p> I love playing many varieties of games. One of my personal favorites is FPS (First Person Shooters).</p>
+<p> First Person Shooters are games that are Player vs player and where you must complete objectives while simultaneously killing people to defend yourself and your team.</P>
+<p> There are so many FPS games, such as Call Of Duty, Battlefield, halo, and so many more.</p>
+<p> Gaming and programming are two of my favorite things to do, and that is why I am aiming for a degree into the programming field.</p>
+<p></p> 
+<h1>Trevor</h1>
+<p> Ever Since I was a kid I always wanted to be a Marine Biologist.</p>
+<p> After being diagnosed with Asthma I knew that being a Marine Biologist Would no longer be as easy.</p>
+<p> I could still have been in the Marine Biologist field but I would not have been able to do what I wanted in that field.</p>
+<p> I always wanted to go under the water and study the sea floor. Studying sharks and other creatures alike was always my dream. </p>
+<p> When we got the news I didn't even know what I wanted to do next.</p>
+<p> I tried Video Game Design and I did not perfer that field. Now I am studying Cyber Security.</p>
+<p> Even though my mind was set on Marine Biology for a long time, I felt like Cyber Security was always something I was interested in.</p>
+<p> I attented the Career Tech Center in Muskegon, Michigan in 2016-2018 and earned two Microsoft Certifications in Security and Networking.</p>
+<p> After High School I plan on attending MCC for 2 year and working on CompTIA Certifications, then transferring to Ferris and finishing my degree in Cyber Security or programming.</p>
+<p>I also am working on another webiste for personal/business use. You will be able to read about many things like my future career, Certifications, and Education. <a href="https://hackney2018.github.io/Life-Story/"><span style="color:#00FFFF">My Personal Website (click) </a></span></p>        
+</body>
+<style>
     </style>
