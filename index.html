@@ -1,39 +1,99 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Horror Studio</title>
-		<link rel="stylesheet" href="styles/main.css">
-	</head>
-	<body>
-		         <ul class="nav nav-tabs">
-			 <li>Home</li>
-		         <li><a href="TrueStories.html">True Stories</a></li>
-		         <li><a href="GhostStories.html">Ghost Stories</a></li>
-			 <li><a href="CreepyPasta.html">CreepyPasta</a></li> 
-			 <li><a href="Aboutus.html">About Us</a></li>
-			 <li><a href="contactus.html">Contact Us</a></li> 
+<head>
+<title>Horror Studio</title>
+<style>
+.text-effect {
+overflow: hidden;
+position: relative;
+filter: contrast(110%) brightness(190%);
+}
+.neon {
+position: relative;
+background: black;
+color: transparent;
+}
+.neon::before, .neon::after {
+content: attr(data-text);
+color: white;
+filter: blur(0.02em);
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+}
+.neon::after {
+mix-blend-mode: difference;
+}
+.gradient, .spotlight {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+pointer-events: none;
+z-index: 10;
+}
+.gradient {
+background: linear-gradient(45deg, red, blue);
+mix-blend-mode: multiply;
+}
+.spotlight {
+animation: light 5s infinite linear;
+background: radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+top: -100%;
+left: -100%;
+mix-blend-mode: color-dodge;
+}
+@keyframes light {
+100% {
+transform: translate3d(50%, 50%, 0);
+}
+}
+.neon {
+font: 700 220px 'Lato', sans-serif;
+text-transform: uppercase;
+text-align: center;
+margin: 0;
+}
+.neon:focus {
+outline: none;
+border: 1px dotted white;
+}
+body {
+background: black;
+display: inline;
+min-height: 100vh;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+</style>
+</head>
+<body>
+<div class="text-effect">
+<h1 class="neon" data-text="Ghost Stories"contenteditable>neon</h1>
+<div class="gradient"></div>
+<div class="spotlight"></div>
+<ul class="nav nav-tabs">
+<li>Home</li>
+<ul>
+<li><a href="TrueStories.html">True Stories</a></li>
+<li><a href="GhostStories.html">Ghost Stories</a></li>
+<li><a href="CreepyPasta.html">CreepyPasta</a></li> 
+<li><a href="Aboutus.html">About Us</a></li>
+<li><a href="contactus.html">Contact Us</a></li> 
 
-		</ul>
-	</body>
-			<img src="https://apollo2.dl.playstation.net/cdn/EP4067/NPEP00241_00/sWgS6FIJMFsIOoHqiaXTsYm3FqPofY02.png"
-			    a href="https://mail.google.com/mail/u/0/#inbox"
-  <title>
- </title>
-	    <body>
-	<h2>HorrorStudio</h2> 
-       Welcome to the official HorrorStudio Interface. Here you will be able to read many creepy stories, starting from real life stories, to ghost encounters, and creepy pasta. 
-	  <br>You will also have the choice to be able to upload your personal experiences or fan made stories.
-	       <br>When uploading your personal story please make sure to PROPERLY label the story so we are certain what genre to label it under.
-	       <br>If you have any questions or problems you may contact one of the developers through the "contact us" tab.
-	       </body></em>
-  <style>
-     body {			    
-          background:black;
-	     Color: red;
-	     nav ul li {
-	       display: inline-block;
-	       list-style-type: none;
-	       }
-	       
-  </style>		    
+</ul>
+</body>
+<img src="https://apollo2.dl.playstation.net/cdn/EP4067/NPEP00241_00/sWgS6FIJMFsIOoHqiaXTsYm3FqPofY02.png"
+a href="https://mail.google.com/mail/u/0/#inbox"
+<title> Home</title>
+<body>
+<h2>HorrorStudio</h2> 
+Welcome to the official HorrorStudio Interface. Here you will be able to read many creepy stories, starting from real life stories, to ghost encounters, and creepy pasta. 
+<br>You will also have the choice to be able to upload your personal experiences or fan made stories.
+<br>When uploading your personal story please make sure to PROPERLY label the story so we are certain what genre to label it under.
+<br>If you have any questions or problems you may contact one of the developers through the "contact us" tab.
+</body>		    
 </html>
