@@ -91,5 +91,11 @@ align-items: center;
 <br><strong>You will also have the choice to be able to upload your personal experiences or fan made stories.</strong></br>
 <strong>When uploading your personal story please make sure to PROPERLY label the story so we are certain what genre to label it under.</stron>
 <br><strong>If you have any questions or problems you may contact one of the developers through the "contact us" tab.</strong></br>
+<script>
+// This is just to auto-update the data-text if you're editing it directly on the page and is not required for the actual effect
+$('[data-text]').on('keyup', function(){
+$(this).attr('data-text', $(this).text());
+});
+</script>
 </body>		    
 </html>
