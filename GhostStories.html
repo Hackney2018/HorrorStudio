@@ -2,7 +2,23 @@
 <html>
 <head>
 <title>Ghost Stories</title>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<ul>
+<li><a href="index.html"><strong>Home</strong></a></li>
+<li><a href="TrueStories.html"><strong>True Stories</strong></a></li>
+<li><strong><span style="color: Green">Ghost Stories</span></strong></li>
+<li><a href="CreepyPasta.html"><strong>Creepy Pasta</strong></a></li>
+<li><a href="Aboutus.html"><strong>About Us</strong></a></li>
+<li><a href="contactus.html"><strong>Contact Us</strong></a></li>
+</ul>
+</body>
 <style>
 .text-effect {
 overflow: hidden;
@@ -70,7 +86,9 @@ align-content: center;
 align-items: center;
 }
 </style>
-</head>
+</html>
+<html>
+<title>Ghost Stories</title>
 <body>
 <div class="text-effect">
 <h1 class="neon" data-text="Ghost"contenteditable>neon</h1>
@@ -149,4 +167,11 @@ I was too afraid to turn on the light. I was afraid of what this man REALLY look
 
 <br>I enjoyed my time there but wasn't sorry to leave it. </br> <br>It felt as though I was leaving hospital myself, and I was relieved and happy to see the back of it.</br>
 <strong>By: LostGirl</strong>
+<script>
+// This is just to auto-update the data-text if you're editing it directly on the page and is not required for the actual effect
+$('[data-text]').on('keyup', function(){
+$(this).attr('data-text', $(this).text());
+});
+</script>
+</body>
 </html>
