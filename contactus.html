@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Contact Us</title>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<ul>   
+<li><a href="index.html"><strong>Home</strong></a></li>
+<li><a href="TrueStories.html"><strong>True Stories</strong></a></li>
+<li><a href="GhostStories.html"><strong>Ghost Stories</strong></a></li>
+<li><a href="CreepyPasta.html"><strong>Creepy Pasta</strong></a></li>
+<li><a href="Aboutus.html"><strong>About Us</strong></a></li>
+<li><strong><span style="color: Red">Contact Us</span></strong></li>
+</ul>
+</body>
 <style>
 .text-effect {
 overflow: hidden;
@@ -68,34 +85,28 @@ align-content: center;
 align-items: center;
 }
 </style>
-<title>Contact Us</title>
-<link rel="shortcut icon" href="favicon.ico">
-</head>
-<body>
-<ul>   
-<li><a href="index.html"><strong>Home</strong></a></li>
-<li><a href="TrueStories.html"><strong>True Stories</strong></a></li>
-<li><a href="GhostStories.html"><strong>Ghost Stories</strong></a></li>
-<li><a href="CreepyPasta.html"><strong>Creepy Pasta</strong></a></li>
-<li><a href="Aboutus.html"><strong>About Us</strong></a></li>
-<li><strong><span style="color: Red">Contact Us</span></strong></li>
-</ul>
-</body>
 </html>
 <html>
-<title>First website</title>
+<title>Contact Us</title>
+<link rel="shortcut icon" href="favicon.ico">
 <body>
 <div class="text-effect">
 <h1 class="neon" data-text="Contact Us"contenteditable>neon</h1>
 <div class="gradient"></div>
 <div class="spotlight"></div>
+</body>
 If You Wish To Contact Us With Any Problems Or Questions Our Emails Will Be Listed Below.
 <p>Trevor Hackney: hackneytrevor@gmail.com</p>
 <p>Caden Hayes: Caden.Hayes2018@gmail.com</p>
 Trevor Hackney: <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=hackneytrevor@gmail.com&tf=1"> <span style="color:yellow">Email Me Here (Click)</a></span>
 <br></br>
 Caden Hayes: <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=Caden.Hayes2018@gmail.com&tf=1"> <span style="color:red">Email Me Here (Click)</a></span>
-</body>
 }
-</style> 
+<script>
+// This is just to auto-update the data-text if you're editing it directly on the page and is not required for the actual effect
+$('[data-text]').on('keyup', function(){
+$(this).attr('data-text', $(this).text());
+});
+</script>
+</body>
 </html>
