@@ -2,7 +2,22 @@
 <html>
 <head>
 <title>About Us</title>
-<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<ul>
+<li><a href="index.html"><strong>Home</strong></a></li>		
+<li><a href="TrueStories.html"><strong>True Stories</strong></a></li>
+<li><a href="GhostStories.html"><strong>Ghost Stories</strong></a></li>
+<li><a href="CreepyPasta.html"><strong>Creepy Pasta</strong></a></li>
+<li><strong>About Us</strong></li>
+<li><a href="contactus.html"><strong>Contact Us</strong></a></li>
+</ul>
+</body>
 <style>
 .text-effect {
 overflow: hidden;
@@ -70,20 +85,16 @@ align-content: center;
 align-items: center;
 }
 </style>
-</head>
+</html>
+<html>
+<title>About Us</title>
+<link rel="shortcut icon" href="favicon.ico">
 <body>
 <div class="text-effect">
 <h1 class="neon" data-text="About Us"contenteditable>neon</h1>
 <div class="gradient"></div>
 <div class="spotlight"></div>
-<ul>
-<li><a href="index.html"><strong>Home</strong></a></li>		
-<li><a href="TrueStories.html"><strong>True Stories</strong></a></li>
-<li><a href="GhostStories.html"><strong>Ghost Stories</strong></a></li>
-<li><a href="CreepyPasta.html"><strong>Creepy Pasta</strong></a></li>
-<li><strong>About Us</strong></li>
-<li><a href="contactus.html"><strong>Contact Us</strong></a></li>
-<body> 
+</body> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/PS4-Console-wDS4.jpg/800px-PS4-Console-wDS4.jpg"
 a href="https://mail.google.com/mail/u/0/#inbox"
 <p></p>
@@ -111,6 +122,11 @@ a href="https://mail.google.com/mail/u/0/#inbox"
 <p> I attented the Career Tech Center in Muskegon, Michigan in 2016-2018 and earned two Microsoft Certifications in Security and Networking.</p>
 <p> After High School I plan on attending MCC for 2 year and working on CompTIA Certifications, then transferring to Ferris and finishing my degree in Cyber Security or programming.</p>
 <p>I also am working on another webiste for personal/business use. You will be able to read about many things like my future career, Certifications, and Education. <a href="https://hackney2018.github.io/Life-Story/"><span style="color:#00FFFF">My Personal Website (click) </a></span></p>        
+<script>
+// This is just to auto-update the data-text if you're editing it directly on the page and is not required for the actual effect
+$('[data-text]').on('keyup', function(){
+$(this).attr('data-text', $(this).text());
+});
+</script>
 </body>
-<style>
-</style>
+</html>
